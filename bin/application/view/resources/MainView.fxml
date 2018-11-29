@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="578.0" prefWidth="771.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane fx:id="tabPane" prefHeight="578.0" prefWidth="771.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Financial Overview">
+            <content>
+                <fx:include fx:id="FinancialOverview" source="FinancialOverview.fxml" />
+            </content>
+          </Tab>
+          <Tab text="Calendar">
+            <content>
+               <fx:include fx:id="Calendar" source="CalendarView.fxml" />            
+            </content>
+          </Tab>
+            <Tab text="Goals">
+              <content>
+                <fx:include fx:id="Goals" source="GoalsView2.fxml" />
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
